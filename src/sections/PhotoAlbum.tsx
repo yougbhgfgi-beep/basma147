@@ -5,11 +5,12 @@ export default function PhotoAlbum() {
   const [visiblePhotos, setVisiblePhotos] = useState<boolean[]>(new Array(4).fill(false))
   const sectionRef = useRef<HTMLElement>(null)
 
+  const base = import.meta.env.BASE_URL
   const photos = [
-    { src: '/images/photo-1.jpg', title: 'نبض واحد' },
-    { src: '/images/photo-2.jpg', title: 'قصة حب' },
-    { src: '/images/photo-3.jpg', title: 'أيامنا الحلوة' },
-    { src: '/images/photo-4.jpg', title: 'سكة العمر' },
+    { src: `${base}images/photo-1.jpg`, title: 'نبض واحد' },
+    { src: `${base}images/photo-2.jpg`, title: 'قصة حب' },
+    { src: `${base}images/photo-3.jpg`, title: 'أيامنا الحلوة' },
+    { src: `${base}images/photo-4.jpg`, title: 'سكة العمر' },
   ]
 
   useEffect(() => {

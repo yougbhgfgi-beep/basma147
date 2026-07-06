@@ -63,7 +63,7 @@ export default function VideoSection() {
           <div className="relative flex items-center justify-center bg-dark-plum/5">
             <video
               ref={videoRef}
-              src="/video.mp4"
+              src={`${import.meta.env.BASE_URL}video.mp4`}
               className="w-full h-auto max-h-[75vh] object-contain cursor-pointer"
               loop
               playsInline

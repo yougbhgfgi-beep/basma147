@@ -23,7 +23,7 @@ export default function Login() {
     <div 
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: 'url(/images/login-bg.jpg)',
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/login-bg.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

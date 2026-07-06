@@ -126,7 +126,7 @@ export default function RingFinale() {
                   transform: 'scale(1.5)',
                 }} />
                 <img
-                  src="/images/ring.png"
+                  src={`${import.meta.env.BASE_URL}images/ring.png`}
                   alt="خاتم الحب"
                   className="w-40 h-40 md:w-56 md:h-56 mx-auto relative"
                   style={{

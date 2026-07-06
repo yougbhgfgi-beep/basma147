@@ -33,7 +33,7 @@ export default function AudioPlayer() {
 
   return (
     <>
-      <audio ref={audioRef} src="/song.mp3" loop />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}song.mp3`} loop />
       <button
         onClick={toggle}
         className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-dark-plum/60 backdrop-blur-md flex items-center justify-center hover:bg-dark-plum/80 transition-all border border-gold-accent/30 shadow-lg"

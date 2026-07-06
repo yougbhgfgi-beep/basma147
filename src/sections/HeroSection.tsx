@@ -30,7 +30,7 @@ export default function HeroSection() {
     <section id="hero" className="min-h-screen relative flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/images/hero-bg.jpg)' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.jpg)` }}
       />
       <div className="absolute inset-0 bg-dark-plum/60" />
 
